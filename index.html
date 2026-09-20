@@ -342,143 +342,99 @@
         &copy; 2024 Legends Garage. Все права защищены.
     </footer>
 
-    <script>
-        // --- ДАННЫЕ: МАШИНЫ И ССЫЛКИ ---
-        // Я подобрал прямые ссылки на конкретные фото этих моделей.
-        // Тебе не нужно ничего скачивать, код сам возьмет картинки из интернета.
-        const cars = [
-            {
-                name: "Ford Mustang Shelby GT500",
-                year: "1967",
-                price: "35 000 ₽ / день",
-                image: "https://images.unsplash.com/photo-1610831176233-ff0dbf203815?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            },
-            {
-                name: "Chevrolet Corvette C2",
-                year: "1965",
-                price: "40 000 ₽ / день",
-                image: "https://images.unsplash.com/photo-1710590982328-80e5e82ff0ee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            },
-            {
-                name: "Mercedes-Benz 280 SL",
-                year: "1970",
-                price: "45 000 ₽ / день",
-                image: "https://images.unsplash.com/photo-1698612769032-498c185cb333?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            },
-            {
-                name: "Porsche 911 Carrera",
-                year: "1973",
-                price: "55 000 ₽ / день",
-                image: "https://images.unsplash.com/photo-1595522391226-2c07c13e7c3f?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFBvcnNjaGUlMjA5MTElMjAxOTczfGVufDB8fDB8fHww"
-            },
-            {
-                name: "Jaguar E-Type",
-                year: "1968",
-                price: "50 000 ₽ / день",
-                image: "https://images.unsplash.com/photo-1700940097683-6f40cd9b313f?q=80&w=1491&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            },
-            {
-                name: "Cadillac DeVille",
-                year: "1959",
-                price: "38 000 ₽ / день",
-                image: "https://images.unsplash.com/photo-1706656470420-73fbafb01641?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2FkaWxsYWMlMjBEZVZpbGxlJTIwMTk1OXxlbnwwfHwwfHx8MA%3D%3D"
-            },
-            {
-                name: "Volkswagen Beetle",
-                year: "1966",
-                price: "18 000 ₽ / день",
-                image: "https://images.unsplash.com/photo-1767023021594-e504612136c3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            },
-            {
-                name: "Rolls-Royce Silver Shadow",
-                year: "1975",
-                price: "65 000 ₽ / день",
-                image: "https://images.unsplash.com/photo-1629287276807-9154a18dd92c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            },
-            {
-                name: "Chevrolet Bel Air",
-                year: "1957",
-                price: "32 000 ₽ / день",
-                image: "https://images.unsplash.com/photo-1620861943732-e50c8a02cbd9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            }
-        ];
+<script>
+    // --- ДАННЫЕ: МАШИНЫ И ЗАГЛУШКИ ---
+    // Используем сервис placehold.co — он генерирует картинки кодом. 
+    // Никаких внешних фото, никаких блокировок. 100% загрузка.
+    const cars = [
+        { name: "Ford Mustang Shelby GT500", year: "1967", price: "35 000 ₽ / день", image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Mustang+GT500&font=playfair-display" },
+        { name: "Chevrolet Corvette C2", year: "1965", price: "40 000 ₽ / день", image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Corvette+C2&font=playfair-display" },
+        { name: "Mercedes-Benz 280 SL", year: "1970", price: "45 000 ₽ / день", image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Mercedes+280SL&font=playfair-display" },
+        { name: "Porsche 911 Carrera", year: "1973", price: "55 000 ₽ / день", image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Porsche+911&font=playfair-display" },
+        { name: "Jaguar E-Type", year: "1968", price: "50 000 ₽ / день", image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Jaguar+E-Type&font=playfair-display" },
+        { name: "Cadillac DeVille", year: "1959", price: "38 000 ₽ / день", image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Cadillac+DeVille&font=playfair-display" },
+        { name: "Volkswagen Beetle", year: "1966", price: "18 000 ₽ / день", image: "https://placehold.co/600x400/1a1a1a/d4af37?text=VW+Beetle&font=playfair-display" },
+        { name: "Rolls-Royce Silver Shadow", year: "1975", price: "65 000 ₽ / день", image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Rolls-Royce&font=playfair-display" },
+        { name: "Chevrolet Bel Air", year: "1957", price: "32 000 ₽ / день", image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Bel+Air+1957&font=playfair-display" }
+    ];
 
-        // --- ОТРИСОВКА ---
-        const grid = document.getElementById('cars-grid');
-        const select = document.getElementById('car-select');
+    // --- ОТРИСОВКА ---
+    const grid = document.getElementById('cars-grid');
+    const select = document.getElementById('car-select');
 
-        cars.forEach(car => {
-            const card = document.createElement('div');
-            card.className = 'car-card';
-            // Если картинка не загрузится, будет заглушка
-            card.innerHTML = `
-                <div class="img-container">
-                    <img src="${car.image}" alt="${car.name}" class="car-img" loading="lazy" onerror="this.src='https://placehold.co/600x400/111/d4af37?text=Photo'">
+    cars.forEach(car => {
+        const card = document.createElement('div');
+        card.className = 'car-card';
+        // Убрал onerror, так как заглушки работают всегда
+        card.innerHTML = `
+            <div class="img-container">
+                <img src="${car.image}" alt="${car.name}" class="car-img" loading="lazy">
+            </div>
+            <div class="card-content">
+                <h3 class="car-name">${car.name}</h3>
+                <p class="car-year">Год выпуска: ${car.year}</p>
+                <div class="price-row">
+                    <span class="price-label">Аренда:</span>
+                    <span class="price-value">${car.price}</span>
                 </div>
-                <div class="card-content">
-                    <h3 class="car-name">${car.name}</h3>
-                    <p class="car-year">Год выпуска: ${car.year}</p>
-                    <div class="price-row">
-                        <span class="price-label">Аренда:</span>
-                        <span class="price-value">${car.price}</span>
-                    </div>
-                    <button class="btn-select" onclick="selectCar('${car.name}')">Выбрать</button>
-                </div>
-            `;
-            grid.appendChild(card);
+                <button class="btn-select" onclick="selectCar('${car.name}')">Выбрать</button>
+            </div>
+        `;
+        grid.appendChild(card);
 
-            const option = document.createElement('option');
-            option.value = car.name;
-            option.textContent = `${car.name} (${car.year})`;
-            select.appendChild(option);
+        const option = document.createElement('option');
+        option.value = car.name;
+        option.textContent = `${car.name} (${car.year})`;
+        select.appendChild(option);
+    });
+
+    // --- ФУНКЦИИ ---
+    function selectCar(name) {
+        select.value = name;
+        document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        
+        gsap.fromTo(".form-wrapper", 
+            { borderColor: "#222" }, 
+            { borderColor: "#d4af37", duration: 0.5, yoyo: true, repeat: 1 }
+        );
+    }
+
+    // Маска телефона
+    const phoneInput = document.getElementById('phone');
+    phoneInput.addEventListener('input', function (e) {
+        let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+        if (!x[2]) { e.target.value = x[1] ? '+7' : ''; return; }
+        e.target.value = !x[2] ? x[1] : '+7 (' + x[2] + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+    });
+    phoneInput.addEventListener('focus', function(e) { if (!e.target.value) e.target.value = '+7'; });
+
+    // Модальное окно
+    const modal = document.getElementById('successModal');
+    const form = document.getElementById('bookingForm');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        modal.classList.add('active');
+        form.reset();
+    });
+
+    function closeModal() {
+        modal.classList.remove('active');
+    }
+
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) closeModal();
+    });
+
+    // Анимация появления
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.car-card').forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: { trigger: card, start: "top 90%" },
+            y: 40, opacity: 0, duration: 0.6, delay: i % 3 * 0.1
         });
+    });
+</script>
 
-        // --- ФУНКЦИИ ---
-        function selectCar(name) {
-            select.value = name;
-            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
-            
-            gsap.fromTo(".form-wrapper", 
-                { borderColor: "#222" }, 
-                { borderColor: "#d4af37", duration: 0.5, yoyo: true, repeat: 1 }
-            );
-        }
-
-        // Маска телефона
-        const phoneInput = document.getElementById('phone');
-        phoneInput.addEventListener('input', function (e) {
-            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
-            if (!x[2]) { e.target.value = x[1] ? '+7' : ''; return; }
-            e.target.value = !x[2] ? x[1] : '+7 (' + x[2] + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
-        });
-        phoneInput.addEventListener('focus', function(e) { if (!e.target.value) e.target.value = '+7'; });
-
-        // Модальное окно
-        const modal = document.getElementById('successModal');
-        const form = document.getElementById('bookingForm');
-
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            modal.classList.add('active');
-            form.reset();
-        });
-
-        function closeModal() {
-            modal.classList.remove('active');
-        }
-
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) closeModal();
-        });
-
-        // Анимация появления
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.utils.toArray('.car-card').forEach((card, i) => {
-            gsap.from(card, {
-                scrollTrigger: { trigger: card, start: "top 90%" },
-                y: 40, opacity: 0, duration: 0.6, delay: i % 3 * 0.1
-            });
-        });
-    </script>
 </body>
 </html>
